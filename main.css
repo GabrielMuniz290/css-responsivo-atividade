@@ -88,7 +88,7 @@ section h2 {
 }
 
 .camisas img{
-height: 15%;
+width: 90%;
 margin-bottom: 10%;
 
 }
@@ -123,6 +123,11 @@ h4{
     margin-bottom: 10px;
 }
 
+footer {
+    background-color: rgb(100, 100, 248) ;
+    text-align: center;
+    padding: 7px 0;
+}
 
 
 @media screen and (max-width: 767px){
@@ -150,14 +155,18 @@ h4{
     .camisas button{
         margin-bottom: 20px;
     }
+    footer{
+        font-size: 0.9em;
+    }
+   
 }
 
-@media  screen and (min-width: 768px) and  (max-width:1023px) {
+@media  screen and (min-width: 768px) and  (max-width:1024px) {
 
     .container{
         max-width: 90%;
         width: 100%;
-        
+    
     }
 
     .conteudo{
@@ -178,15 +187,18 @@ h4{
     .camisas  {
         display: grid;
         grid-template-columns: repeat(2,49%);
-        column-gap: 1%;
-        row-gap: 5%;
-        justify-content: space-between;
+        box-sizing: border-box;
         
     }
-    .camisas img{
-        height: 15%;
-        margin-bottom: 0%;
-        
-        }
+    .conteudo > img{
+        width: 100%;
+        margin-right: 0em;
+        margin-bottom: 0em;
+    } 
+  
+    footer{
+
+        margin-top: 70px;
+    }
 
     }
